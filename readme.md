@@ -1,6 +1,6 @@
 # Request Tracker (unofficial) developer doc
 
-The aim of this repo is to make a clean and efficient documentation for developping around [Request Tracker](https://www.bestpractical.com/rt-and-rtir).
+The aim of this repo is to make a clean and efficient documentation for developping around [Request Tracker](https://www.bestpractical.com/rt-and-rtir) v4.
 
 Official documentation sources are:
   - [RT website](https://docs.bestpractical.com/rt/4.4.0/index.html) (the "Developer Documentation" section is actually the API for *scrip*ing and extentions)
@@ -26,6 +26,8 @@ Set(@ReferrerWhitelist, qw(127.0.0.1:8080));
 # Disable cache
 Set($DevelMode, 1);
 ```
+
+More details of RT_Config.pm file [can be found on the wiki](http://requesttracker.wikia.com/wiki/SiteConfig)
 
 ### Run RT
 
