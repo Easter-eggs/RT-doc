@@ -10,7 +10,7 @@ Official user documentation is very clear and complete; and wiki is a good sourc
 
 ## Getting ready
 
-First of all, you'll have to **install RT**. The [DevelopmentInstallation installation guide](http://requesttracker.wikia.com/wiki/DevelopmentInstallation) in the wiki is a good starting point.
+First of all, you'll have to **install RT**. The [Development installation guide](http://requesttracker.wikia.com/wiki/DevelopmentInstallation) in the wiki is a good starting point.
 
 ### RT_SiteConfig.pm
 
