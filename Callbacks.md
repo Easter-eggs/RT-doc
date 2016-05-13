@@ -76,7 +76,7 @@ It's possible to access global variables in callback context.
 
 ##### Session
 
-A Hash with an interesting key: CurrentUser with is a `RT::CurrentUser` object.
+A Hash with an interesting key: CurrentUser with is a [`RT::User`](https://docs.bestpractical.com/rt/4.4.0/RT/User.html) object.
 
 Example:
 
