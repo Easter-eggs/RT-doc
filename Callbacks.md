@@ -11,7 +11,7 @@ is a good reading for basic presentation, especially about Callbacks paths.
 We will attach a callback to be displayed at the top of a ticket's page, before ticket metadata.
 The callback is defined in `share/html/Ticket/Display.html`, and is named `BeforeShowSummary`.
 
-The file to create is `local/html/Callbacks/<whatever>/Ticket/Display.html/BeforeShowSummary` (where <whatever> is whatever you wants).
+The file to create is `local/html/Callbacks/[whatever]/Ticket/Display.html/BeforeShowSummary` (where *[whatever]* is whatever you wants).
 
 ### Syntax
 
