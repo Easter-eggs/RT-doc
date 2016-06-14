@@ -115,7 +115,7 @@ while (my $ticket = $tickets->Next()) {
 
 #### ItemsArrayRef
 
-`DBIx::SearchBuilder` also define `ItemsArrayRef`. In [DBIx::SearchBuilder documentation](http://search.cpan.org/~alexmv/DBIx-SearchBuilder-1.66/lib/DBIx/SearchBuilder.pm#ItemsArrayRef) we acan read :
+`DBIx::SearchBuilder` also define `ItemsArrayRef`. In [DBIx::SearchBuilder documentation](http://search.cpan.org/dist/DBIx-SearchBuilder/lib/DBIx/SearchBuilder.pm#ItemsArrayRef) we can read :
 
     Return a refernece to an array containing all objects found by this search.
 
