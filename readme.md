@@ -32,3 +32,11 @@ More details of RT_Config.pm file [can be found on the wiki](http://requesttrack
 ### Run RT
 
     sbin/rt-server --port 8080
+
+## Reading this doc
+
+We advise you to read this doc in this order:
+
+  - `general.md`: containts general things to know that are used in all other files
+  - `callbacks.md`: if you plan to write scrips
+  - `snippets.md`: basic snippets
