@@ -180,4 +180,4 @@ p $ticket->Subject;
 
 To find all that accessibles properties, you'll have to look at `_OverlayAccessible`, `_VendorAccessible` or `_LocalAccessible` methods of previously listed clasees.
 
-The `attributes_list.md` in "RT Record attributes" folder list them for you.
+The [attributes_list.md](RT Record attributes/attributes_list.md) in the `RT Record attributes` folder list them for you.
