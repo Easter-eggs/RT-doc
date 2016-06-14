@@ -36,8 +36,7 @@ More details of RT_Config.pm file [can be found on the wiki](http://requesttrack
 ## Reading this doc
 
 We advise you to read this doc in this order:
-
-  - `general.md`: containts general things to know that are used in all other files
-  - `callbacks.md`: if you plan to write scrips
-  - `snippets.md`: basic snippets
+  - [general.md](adz.): containts general things to know that are used in all other files
+  - [callbacks.md](callbacks.md): if you plan to write scrips
+  - [snippets.md](snippets.md): basic snippets
   - have a look to `examples` folder for advanced examples
