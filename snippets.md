@@ -1,5 +1,7 @@
 # Loading objects
 
+More snippets are available on [official wiki](http://requesttracker.wikia.com/wiki/CodeSnippets).
+
 **Important**: All snippets here must begin with this the init code described in `general.md` file.
 
 ## Load a Queue
