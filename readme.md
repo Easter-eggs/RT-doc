@@ -4,7 +4,7 @@ The aim of this repo is to make a clean and efficient documentation for developp
 
 Official documentation sources are:
   - [RT website](https://docs.bestpractical.com/rt/4.4.0/index.html) (the "Developer Documentation" section is actually the API for *scrip*ing and extentions)
-  - [RT Wiki](http://requesttracker.wikia.com/wiki/HomePage) (hosted at wikia.com)
+  - [RT Wiki](https://rt-wiki.bestpractical.com./)
 
 Official user documentation is very clear and complete; and wiki is a good source but there is no quick beginner dev documentation. This is the aim of this project: help for the first steps of getting into RT.
 
