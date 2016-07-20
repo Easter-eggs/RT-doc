@@ -2,7 +2,7 @@
 
 ## Presentation
 
-[RT Wiki Callbacks page](http://requesttracker.wikia.com/wiki/CustomizingWithCallbacks)
+[RT Wiki Callbacks page](https://rt-wiki.bestpractical.com/index.php?title=CustomizingWithCallbacks)
 is a good reading for basic presentation, especially about Callbacks paths.
 
 ## Examples

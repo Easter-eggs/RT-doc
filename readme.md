@@ -4,13 +4,13 @@ The aim of this repo is to make a clean and efficient documentation for developp
 
 Official documentation sources are:
   - [RT website](https://docs.bestpractical.com/rt/4.4.0/index.html) (the "Developer Documentation" section is actually the API for *scrip*ing and extentions)
-  - [RT Wiki](https://rt-wiki.bestpractical.com./)
+  - [RT Wiki](https://rt-wiki.bestpractical.com/)
 
 Official user documentation is very clear and complete; and wiki is a good source but there is no quick beginner dev documentation. This is the aim of this project: help for the first steps of getting into RT.
 
 ## Getting ready
 
-First of all, you'll have to **install RT**. The [Development installation guide](http://requesttracker.wikia.com/wiki/DevelopmentInstallation) in the wiki is a good starting point.
+First of all, you'll have to **install RT**. The [Development installation guide](https://rt-wiki.bestpractical.com/index.php?title=DevelopmentInstallation) in the wiki is a good starting point.
 
 ### RT_SiteConfig.pm
 
@@ -27,7 +27,7 @@ Set(@ReferrerWhitelist, qw(127.0.0.1:8080));
 Set($DevelMode, 1);
 ```
 
-More details of RT_Config.pm file [can be found on the wiki](http://requesttracker.wikia.com/wiki/SiteConfig)
+More details of RT_Config.pm file [can be found on the wiki](https://rt-wiki.bestpractical.com/index.php?title=SiteConfig)
 
 ### Run RT
 
