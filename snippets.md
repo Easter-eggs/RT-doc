@@ -2,7 +2,7 @@
 
 More snippets are available on [official wiki](https://rt-wiki.bestpractical.com/index.php?title=CodeSnippets).
 
-**Important**: All snippets here must begin with this the init code described in `general.md` file.
+**Important**: All snippets here must begin with this the init code described in [general.md](general.md) file.
 
 ## Load a Queue
 
@@ -19,7 +19,7 @@ my $cf1 = RT::CustomField->new(RT->SystemUser);
 $cf1->LoadByName(Name => 'cf1');
 ```
 
-## Find tickets in a queue
+## List tickets in a queue
 
 ```perl
 my $queueName = 'My Queue';
