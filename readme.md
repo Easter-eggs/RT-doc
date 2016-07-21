@@ -33,6 +33,11 @@ More details of RT_Config.pm file [can be found on the wiki](https://rt-wiki.bes
 
     sbin/rt-server --port 8080
 
+### Disable email sending
+
+When debugging, we sometimes want to disable email sending to have a more clear log.
+There is a [usefull trick on wiki for that](https://rt-wiki.bestpractical.com/index.php?title=SuppressOutgoingMail#Suppress_All_Outgoing_Mail).
+
 ## Reading this doc
 
 We advise you to read this doc in this order:
