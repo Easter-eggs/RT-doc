@@ -18,6 +18,20 @@ p $queue;
 my $cf1 = RT::CustomField->new(RT->SystemUser);
 $cf1->LoadByName(Name => 'cf1');
 ```
+## Get a CF value for a ticket
+
+```perl
+my $ticket = RT::Ticket->new(RT->SystemUser);
+$ticket->Load(12);  # Load by id
+my $cf = $ticket->LoadCustomFieldByIdentifier('My CF name');  # RT::CustomField
+my $vals = $ticket->CustomFieldValues($cf);  # RT::ObjectCustomFieldValues
+# Print first selected value
+if ($vals->First) {  # RT::ObjectCustomFieldValue
+    p $vals->First->Content;  # String
+} else {
+    p undef;
+}
+```
 
 ## List tickets in a queue
 
