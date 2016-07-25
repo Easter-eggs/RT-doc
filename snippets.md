@@ -33,6 +33,14 @@ if ($vals->First) {  # RT::ObjectCustomFieldValue
 }
 ```
 
+## Set a CF value for a ticket
+
+```perl
+my $ticket = RT::Ticket->new(RT->SystemUser);
+$ticket->Load(12);  # Load by id
+$ticket->AddCustomFieldValue(Field => 'My CF name', Value => 'My value');
+```
+
 ## List tickets in a queue
 
 ```perl
