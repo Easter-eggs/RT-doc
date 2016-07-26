@@ -23,14 +23,7 @@ $cf1->LoadByName(Name => 'cf1');
 ```perl
 my $ticket = RT::Ticket->new(RT->SystemUser);
 $ticket->Load(12);  # Load by id
-my $cf = $ticket->LoadCustomFieldByIdentifier('My CF name');  # RT::CustomField
-my $vals = $ticket->CustomFieldValues($cf);  # RT::ObjectCustomFieldValues
-# Print first selected value
-if ($vals->First) {  # RT::ObjectCustomFieldValue
-    p $vals->First->Content;  # String
-} else {
-    p undef;
-}
+my $value = $ticket->FirstCustomFieldValue('My CF name');
 ```
 
 ## Set a CF value for a ticket
