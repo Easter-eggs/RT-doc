@@ -8,9 +8,13 @@ use strict;
 use warnings;
 use Data::Printer;  # For "p" function
 
-# use lib qw(/home/bruno/dev/ee/rt/lib);  # Use it if your RT instance is not in a standard path
+# use lib qw(/home/bruno/dev/rt/lib);        # Use it if your RT instance is not in a standard path
+# use lib qw(/home/bruno/dev/rt/local/lib);  # Use it if your RT instance is not in a standard path and you have overlay (*_local.pm files)
 use RT;
 use RT::User;
+
+# Disable STDOUT buffering
+$| = 1;
 
 print "Setting up rt...\n";
 RT::LoadConfig();
