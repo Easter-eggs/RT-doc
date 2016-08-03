@@ -33,11 +33,11 @@ Interesting readings:
 
 #### v2
 
-Next step is to declare a variable and access it. We use the `<%init>` bloc:
+Next step is to declare a variable and access it. We use the `<%INIT>` bloc:
 
-    <%init>
+    <%INIT>
     my $hello = "Hello World";
-    </%init>
+    </%INIT>
 
     <% $hello %>
 
@@ -64,9 +64,9 @@ In your callback file, you can access to variables passed by the caller:
 
 Example:
 
-    <%args>
+    <%ARGS>
     $Ticket
-    </%args>
+    </%ARGS>
 
     This page presents ticket number <% $Ticket->Id %>
 
@@ -83,3 +83,47 @@ Example:
     $session{'CurrentUser'}->Name
 
 Will return current user's name.
+
+### Adding code
+
+**Trick**: no space before %
+
+Example:
+
+    <%ARGS>
+    $User => undef;
+    $Friendly => 0;
+    </%ARGS>
+
+    % if ($Name) {
+    %     if ($Friendly) {
+              Hello dear <% $Name %>, happy to see you here !
+    %    } else {
+              Hello <% $Name %>
+    %    }
+    % }
+
+### Adding init block
+
+Sometime it's usefull to compute some variables, or do some job before displaying anything.
+That's why init block is for:
+
+    % if ($can_modify) {
+          <a href="/modify">Modify me</a>
+    % }
+    % if ($can_modify_cf) {
+          <a href="/modify_cf">Modify custom fileds</a>
+    % }
+
+    <%ARGS>
+    $User;
+    $Ticket;
+    </%ARGS>
+
+    <%INIT>
+    # Normal Perl code here
+    my $can_modify = $Ticket->CurrentUserHasRight('ModifyTicket');
+    my $can_modify_cf = $Ticket->CurrentUserHasRight('ModifyCustomField');
+    <%/INIT>
+
+(notice that args and init blocks can be placed anywhere in the file; order isn't important)
