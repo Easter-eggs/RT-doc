@@ -18,6 +18,7 @@ p $queue;
 my $cf1 = RT::CustomField->new(RT->SystemUser);
 $cf1->LoadByName(Name => 'cf1');
 ```
+
 ## Get a CF value for a ticket
 
 ```perl
@@ -44,5 +45,15 @@ print $tickets->Count . " tickets founds in queue '" . $queueName . "':\n";
 while (my $ticket = $tickets->Next()) {
     # $ticket is an RT::Ticket instance
     print "   - #" . $ticket->Id . ": " . $ticket->Subject . "\n";
+}
+```
+
+## List user-defined groups
+
+```perl
+my $groups = RT::Groups->new(RT->SystemUser);
+$groups->LimitToUserDefinedGroups;
+while (my $group = $groups->Next) {
+    print $group->Name . "\n";
 }
 ```
