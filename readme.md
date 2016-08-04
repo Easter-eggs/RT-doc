@@ -25,9 +25,16 @@ Set(@ReferrerWhitelist, qw(127.0.0.1:8080));
 
 # Disable cache
 Set($DevelMode, 1);
+
+# Set logging to console and logging level to debug (so it will log debug, warning, ...)
+Set($LogToFile, undef);
+Set($LogToSysLog, undef);
+Set($LogToSTDERR, 'debug');
 ```
 
 More details of RT_Config.pm file [can be found on the wiki](https://rt-wiki.bestpractical.com/index.php?title=SiteConfig)
+
+More infos about debugging can be found in [debugging.md](debugging.md)
 
 ### Run RT
 
@@ -42,6 +49,7 @@ There is a [usefull trick on wiki for that](https://rt-wiki.bestpractical.com/in
 
 We advise you to read this doc in this order:
   - [general.md](general.md): containts general things to know that are used in all other files
-  - [callbacks.md](callbacks.md): if you plan to write scrips
   - [snippets.md](snippets.md): basic snippets
+  - [debugging.md](debugging.md): debugging techniques
+  - [callbacks.md](callbacks.md): if you plan to write scrips
   - have a look to `examples` folder for advanced examples
