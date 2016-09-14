@@ -51,8 +51,17 @@ This is equivalent to :
 #### Global variables
 
 There are two global variables always accessible in views :
-  * `%session`
+  * `$session`
   * `$DECODED_ARGS`
+
+$session contains an interesting key: CurrentUser, which is a [`RT::User`](https://docs.bestpractical.com/rt/latest/RT/User.html) object.
+
+Example:
+
+    $session{'CurrentUser'}->Name
+
+Will return current user's name.
+
 
 #### Passed variables
 
@@ -75,20 +84,6 @@ Example:
     </%ARGS>
 
     This page presents ticket number <% $Ticket->Id %>
-
-#### Global variables
-
-It's possible to access global variables in callback context.
-
-##### Session
-
-A Hash with an interesting key: CurrentUser with is a [`RT::User`](https://docs.bestpractical.com/rt/latest/RT/User.html) object.
-
-Example:
-
-    $session{'CurrentUser'}->Name
-
-Will return current user's name.
 
 ### Adding code
 
@@ -133,3 +128,5 @@ That's why init block is for:
     <%/INIT>
 
 (notice that args and init blocks can be placed anywhere in the file; order isn't important)
+
+=> see also [debugging.md](debugging.md)
