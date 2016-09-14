@@ -49,6 +49,7 @@ There is a [usefull trick on wiki for that](https://rt-wiki.bestpractical.com/in
 
 We advise you to read this doc in this order:
   - [general.md](general.md): containts general things to know that are used in all other files
+  - [scrips.md](scrips.md): scrips
   - [snippets.md](snippets.md): basic snippets
   - [debugging.md](debugging.md): debugging techniques
   - [callbacks.md](callbacks.md): if you plan to write scrips
