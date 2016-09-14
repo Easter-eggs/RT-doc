@@ -48,6 +48,12 @@ This is equivalent to :
 
 ### Accessing variables
 
+#### Global variables
+
+There are two global variables always accessible in views :
+  * `%session`
+  * `$DECODED_ARGS`
+
 #### Passed variables
 
 In `share/html/Ticket/Display.html`, callbak call line is:
