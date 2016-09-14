@@ -81,9 +81,34 @@ my $self = shift;
 
 This shif first argument to $self variable. After doing this, you'll have access to $self: an object with these attributes:
 
+  - **Argument**         : String
   - **ScripActionObj**   : RT::ScripAction
   - **ScripObj**         : RT::Scrip
   - **TemplateObj**      : RT::Template
   - **TicketObj**        : RT::Ticket
   - **TransactionObj**   : RT::Transaction
   - **user**             : RT::CurrentUser
+
+### Passing argument
+
+One argument can be passed to conditions and actions.
+It is accesible via `$self->Argument`
+
+For example, the `StatusChange` condition (lib/RT/Condition/StatusChange.pm) takes an argument, and is used two times, to define two standard RT conditions:
+
+in `etc/initialdata`:
+
+```perl
+{  Name                 => 'On Resolve',                               # loc
+   Description          => 'Whenever a ticket is resolved',            # loc
+   ApplicableTransTypes => 'Status',
+   ExecModule           => 'StatusChange',
+   Argument             => 'resolved'
+},
+{  Name                 => 'On Reject',                                # loc
+   Description          => 'Whenever a ticket is rejected',            # loc
+   ApplicableTransTypes => 'Status',
+   ExecModule           => 'StatusChange',
+   Argument             => 'rejected'
+},
+```
