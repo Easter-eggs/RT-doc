@@ -52,5 +52,5 @@ We advise you to read this doc in this order:
   - [scrips.md](scrips.md): scrips
   - [snippets.md](snippets.md): basic snippets
   - [debugging.md](debugging.md): debugging techniques
-  - [callbacks.md](callbacks.md): if you plan to write scrips
+  - [callbacks.md](callbacks.md): if you plan to write callbacks
   - have a look to `examples` folder for advanced examples
