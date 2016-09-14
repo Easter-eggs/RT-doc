@@ -38,7 +38,20 @@ Set($LogStackTraces, 'debug');
 
 ## Debugging in scrips
 
-TODO
+There is 2 ways of debugging inside of a scrip:
+
+  - print STDERR
+  - RT->Logger->warning()
+
+```perl
+print STDERR "Hello World\n";
+RT->Logger->warning("Hello from logging");
+```
+Produce :
+
+    Hello World
+    [25157] [Tue Sep 13 13:45:38 2016] [warning]: Hello from logging (/home/bruno/dev/ee/rt/rt_4.4-vierge/sbin/../local/lib/RT/Action/ActionTest.pm:10)
+
 
 ## Debugging in views
 
